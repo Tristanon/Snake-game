@@ -1,0 +1,25 @@
+# hướng đi
+    if changeto == 'RIGHT' and not direction == 'LEFT':
+        direction = 'RIGHT'
+    if changeto == 'LEFT' and not direction == 'RIGHT':
+        direction = 'LEFT'
+    if changeto == 'UP' and not direction == 'DOWN':
+        direction = 'UP'
+    if changeto == 'DOWN' and not direction == 'UP':
+        direction = 'DOWN'
+    #cập nhật vị trí:
+    if direction == 'RIGHT':
+        snakepos[0] +=m
+    if direction == 'LEFT':
+        snakepos[0] -=m
+    if direction == 'UP':
+        snakepos[1] +=m
+    if direction == 'DOWN':
+        snakepos[1] -=m
+    #Cơ chế thêm khúc dài ra:
+    snakebody.insert(0,list(snakepos))
+    if snakepos[0] == foodpos[0] and snakepos[1] == foodpos[1]:
+        score +=1
+        foodflat =False
+    else:
+        snakebody.pop()
