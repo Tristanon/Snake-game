@@ -1,0 +1,6 @@
+#background(cập nhật lên cửa sổ):
+    gameSurface.fill(white)
+    for pos in snakebody:
+        gameSurface.blit(Imgbody,pygame.Rect(pos[0],pos[1],m,m))
+    gameSurface.blit(Imghead,pygame.Rect(snakebody[0][0],snakebody[0][1],m,m))
+    gameSurface.blit(Imgfood,pygame.Rect(foodpos[0],foodpos[1],m,m))
