@@ -1,0 +1,8 @@
+#import:
+import pygame , random ,time, sys, ctypes
+pygame.init()
+#load hình ảnh:
+m = 20
+Imgbody = pygame.transform.scale(pygame.image.load('body.jpg'),(m,m))
+Imghead = pygame.transform.scale(pygame.image.load('head.jpg'),(m,m))
+Imgfood = pygame.transform.scale(pygame.image.load('nguhung.jpg'),(m,m))
