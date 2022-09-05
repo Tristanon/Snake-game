@@ -1,0 +1,8 @@
+#Sản sinh phuhungngu:
+    if foodflat == False:
+        foodx = random.randrange(1,128)
+        foody = random.randrange(1,70) 
+        if foodx %2 != 0: foodx +=1
+        if foody %2 != 0: foody +=1
+        foodpos = [foodx * 10 , foody * 10 ]
+    foodflat = True
