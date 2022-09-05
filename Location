@@ -1,0 +1,9 @@
+#cập nhật vị trí:
+    if direction == 'RIGHT':
+        snakepos[0] +=m
+    if direction == 'LEFT':
+        snakepos[0] -=m
+    if direction == 'UP':
+        snakepos[1] +=m
+    if direction == 'DOWN':
+        snakepos[1] -=m
