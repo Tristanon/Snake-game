@@ -1,0 +1,11 @@
+#Xử lý di chuyển đụng 4 cạnh biện:
+    if snakepos[0] > 1200 or snakepos[0] < 10:
+        game_over()
+    if snakepos[1] > 680 or snakepos[1] < 10:
+        game_over()
+    #Xử lý tự ăn chính mình:
+    for b in snakebody[1:]:
+        if snakepos[0] == b[0] and snakepos[1] == b[1]:
+            game_over()
+    #Đường viền:
+    pygame.draw.rect(gameSurface,red,(10,10,1280,700),2)
