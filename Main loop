@@ -16,3 +16,5 @@ while True:
                 changeto = 'UP'
             if event.key == pygame.K_ESCAPE:
                 pygame.event.post(pygame.evet.Event(pygame.QUIT))
+        show_score()
+        pygame.display.flip() 
