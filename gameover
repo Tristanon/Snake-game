@@ -1,0 +1,12 @@
+#hàm gameover
+def game_over():
+    gfont = pygame.font.SysFont('consolas',40)
+    gsurf = gfont.render('Game Over!',True,red)
+    grect = gsurf.get_rect()
+    grect.midtop = (640,250)
+    gameSurface.blit(gsurf,grect)
+    show_score(0)
+    pygame.display.flip()
+    time.sleep(3)
+    pygame.quit()
+    sys.exit()
