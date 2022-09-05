@@ -1,0 +1,3 @@
+#tạo cưa sổ:
+gameSurface = pygame.display.set_mode((1280,700))
+pygame.display.set_caption('Game con rắn')
