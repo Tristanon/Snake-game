@@ -1,0 +1,12 @@
+#khai báo biến
+snakepos = [100,60]
+snakebody = [[100,60],[80,60],[60,60]]
+foodx = random.randrange(1,128)
+foody = random.randrange(1,70)
+if foodx % 2 != 0: foodx +=1
+if foody % 2 != 0: foody +=1
+foodpos = [foodx * 10, foody *10]
+foodflat = True
+direction = 'RIGHT'
+changeto = direction
+score = 0
