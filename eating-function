@@ -1,0 +1,7 @@
+#Cơ chế thêm khúc dài ra:
+    snakebody.insert(0,list(snakepos))
+    if snakepos[0] == foodpos[0] and snakepos[1] == foodpos[1]:
+        score +=1
+        foodflat =False
+    else:
+        snakebody.pop()
