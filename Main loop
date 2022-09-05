@@ -1,0 +1,18 @@
+#vòng lặp chính
+while True: 
+    pygame.time.delay(200)
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+        # xử lý phím
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_d:
+                changeto = 'RIGHT'
+            if event.key == pygame.K_a:
+                changeto = 'LEFT'
+            if event.key == pygame.K_w:
+                changeto = 'DOWN'
+            if event.key == pygame.K_s:
+                changeto = 'UP'
+            if event.key == pygame.K_ESCAPE:
+                pygame.event.post(pygame.evet.Event(pygame.QUIT))
