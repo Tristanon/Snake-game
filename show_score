@@ -1,0 +1,10 @@
+#hàm show_score:
+def show_score(choice = 1):
+    sfont = pygame.font.SysFont('consolas',20)
+    ssurf = sfont.render('Score: {0}'.format(score),True,black)
+    srect = ssurf.get_rect()
+    if choice == 1:
+        srect.midtop = (70,20)
+    else:
+        srect.midtop = (640,320)
+    gameSurface.blit(ssurf,srect)
